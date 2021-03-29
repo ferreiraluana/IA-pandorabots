@@ -1,4 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<aiml version="2.0">
-	<!-- insert your AIML categories here -->
+<aiml>
+    
+
+  <category>
+    <pattern> *  </pattern>
+    <template> 
+        <random>
+            <li>nao sei </li>
+        </random>
+    </template>
+  </category>
+  
+  <category>
+    <pattern> * pao </pattern>
+    <template> 
+        <random>
+            <li>nao sou uma padaria </li>
+        </random>
+    </template>
+  </category>
+  
+  <category>
+    <pattern> oi </pattern>
+    <template> 
+        <random>
+            <li>Olá! Como posso ajudar? </li>
+            <li>Oi! O que gostaria de saber? </li>
+            <li>Oi! Qual é a sua dúvida? </li>
+        </random>
+    </template>
+  </category>
+  
+  <category>
+    <pattern> qual o preco do dolar </pattern>
+    <template> o dolar atual é 6,55 </template>
+  </category>
+  
 </aiml>
