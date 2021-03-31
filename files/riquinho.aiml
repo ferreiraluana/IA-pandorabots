@@ -36,4 +36,26 @@
     <template> o dolar atual é 6,55 </template>
   </category>
   
+  <!-- Atividade 01: funcoes <get/> e <set/>     
+  O bot agora eh capaz de armazenar o nome do usuario  -->
+  
+  <category>
+<pattern>QUAL E O MEU NOME</pattern>
+<template>
+  <condition name="name">
+      <li value="unknown">Você ainda não me disse o seu nome</li>
+      <li value="">Você ainda não me disse o seu nome!</li>
+      <li>Você é <get name="name"/>!</li>
+  </condition>
+</template>
+</category>
+
+<category>
+<pattern>MEU NOME E *</pattern>
+<template>Prazer em conhecer-te, <set name="name"><star/></set></template>
+</category>
+  
+  
+  
+  
 </aiml>
